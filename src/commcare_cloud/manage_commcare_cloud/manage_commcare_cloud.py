@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 
+from commcare_cloud.manage_commcare_cloud.test_environments import TestEnvironments
 from ..argparse14 import ArgumentParser
 
 from commcare_cloud.commands.command_base import CommandBase
@@ -10,11 +11,12 @@ from commcare_cloud.manage_commcare_cloud.install import Install
 from commcare_cloud.manage_commcare_cloud.make_docs import MakeDocs
 
 COMMAND_TYPES = [
-    Install,
-    Get,
-    ListVaultKeys,
     Configure,
+    Get,
+    Install,
+    ListVaultKeys,
     MakeDocs,
+    TestEnvironments,
 ]
 
 
